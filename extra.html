@@ -1,0 +1,15 @@
+<li class="navbar-item btn btn-success p-0 m-0 " id="login">
+			<!-- <a href="" class="nav-link text-white"> --><?php 
+			if(isset($_SESSION['full_name'])!=null)
+			{
+				echo 'Welcome <strong>'.$_SESSION['full_name'].'</strong>';
+
+				echo '<li class="navbar-item btn btn-danger p-0 m-0">
+			<a href="logout.php" class="nav-link text-white">Logout</a>
+		</li>';
+			}else{
+				echo '<a href="login.php" class="nav-link text-white">Login</a>';
+			}
+
+			 ?><!-- </a> -->
+		</li>
